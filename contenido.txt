@@ -1,0 +1,11 @@
+Gemma Schiebe, https://gemmaschiebefineart2.wordpress.com/, #arte #naturaleza #web
+Boids Algorithm, https://www.are.na/block/29674763, #sonido #visualización #web
+Ana Kova - Movimiento de palabras, https://www.are.na/block/29902508, #simulación #visualización #web
+Paisajes a base de elementos naturales, https://gemmaschiebefineart2.wordpress.com/2015/04/15/landscapes-dictated-by-the-shape-of-natural-objects-and-made-up-of-them/, #formas #naturaleza #web
+P5JS - Librería libre de animación para navegador,https://p5js.org/examples/, #javascript #floss #web #animación
+Airla's Art - Retrato a base de etiquetas,https://www.instagram.com/p/DXh2FQ3kbyD/,  #visualización #dataart #facetracking #web
+p5MediaPipe - Demo de funcionamiento de p5.js!!,https://danielasalamanca.github.io/p5MediaPipe/, #facetracking #web
+p5MediaPipe repo, https://github.com/TetsuakiBaba/p5MediaPipe, #código
+Gustavo Munoz - Yūgen, https://www.are.na/block/27487593, #ritmo #patrones #arte_algoritmico
+Visualización de sonido, https://www.instagram.com/p/Cq2e7LcPQxv/?img_index=1, #poético #web
+creative-coding-explorations, https://www.are.na/block/17878006, #arte #palabras #poético
