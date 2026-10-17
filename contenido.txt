@@ -9,3 +9,4 @@ p5MediaPipe repo, https://github.com/TetsuakiBaba/p5MediaPipe, #código
 Gustavo Munoz - Yūgen, https://www.are.na/block/27487593, #ritmo #patrones #arte_algoritmico
 Visualización de sonido, https://www.instagram.com/p/Cq2e7LcPQxv/?img_index=1, #web
 creative-coding-explorations, https://www.are.na/block/17878006, #arte #palabras #poético
+Colores HTML, https://htmlcolorcodes.com/es/, #colores #desarrollo #html
