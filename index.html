@@ -15,7 +15,8 @@
     <style>
         /* --- GLOBAL: blanco y negro con acento verde --- */
         body {
-            background-color: #ffffff;
+            background-color: white;
+            /* background-image: url("background/pith-338-16x9-loop.webm"); */
             color: #000000;
             font-family: "Inter", sans-serif;
             margin: 0;
@@ -27,7 +28,7 @@
 
         #welcome-text {
             font-weight: bold;
-            color: #1DF5E3;
+            color: #1e00ff99;
             /* verde permanente */
         }
 
@@ -69,7 +70,7 @@
         /* Hover: sombra verde difuminada */
         .hashtag:hover,
         .related-hashtag:hover {
-            box-shadow: 0 0 15px 5px #00ddff99;
+            box-shadow: 0 0 15px 5px #1e00ff99;
             background-color: transparent;
         }
 
@@ -84,7 +85,7 @@
         }
 
         .title-link:hover {
-            box-shadow: 0 0 15px 5px #00ddff99;
+            box-shadow: 0 0 15px 5px #1e00ff99;
             background-color: transparent;
             text-decoration: underline;
             /* se mantiene el subrayado original */
@@ -202,17 +203,32 @@
             width: 100%;
             height: 30px;
         }
+
+        .bg-video {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(7);
+        }
     </style>
 </head>
+
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="background/pith-338-16x9-loop.webm" type="video/webm">
+</video>
 
 <body>
     <div class="title">
         <span id="welcome-text"></span><span class="cursor"></span>
+        <div style="width: 100%; height: 30px;"></div>
+
     </div>
-    <div style="width: 100%; height: 30px;"></div>
 
     <script>
-        const welcomeMessage = "Bienvenid@ a mi fuente:)";
+        const welcomeMessage = "archivo vivo";
         let i = 0;
 
         function typeEffect() {
@@ -257,7 +273,7 @@
                         if (!hashtagMap[normalizedTag]) {
                             hashtagMap[normalizedTag] = [];
                         }
-                        hashtagMap[normalizedTag].push({title, url, hashtags});
+                        hashtagMap[normalizedTag].push({ title, url, hashtags });
                     });
                 });
 
@@ -318,7 +334,7 @@
             function populateLeftSection(selectedTag) {
                 leftSection.innerHTML = '';
                 const currentItems = hashtagMap[selectedTag];
-                currentItems.forEach(({title, url}) => {
+                currentItems.forEach(({ title, url }) => {
                     const link = document.createElement('a');
                     link.href = url;
                     link.textContent = title;
@@ -333,7 +349,7 @@
 
             const uniqueRelatedHashtags = new Set();
 
-            items.forEach(({hashtags}) => {
+            items.forEach(({ hashtags }) => {
                 hashtags.forEach(relatedTag => {
                     if (relatedTag.toLowerCase() !== tag.toLowerCase()) {
                         uniqueRelatedHashtags.add(relatedTag);
